@@ -7,8 +7,7 @@ Marsyas (Music Analysis, Retrieval and Synthesis for Audio Signals) is an open s
 
 | Dataset Name | Original Location   | Destination Location  | Data Movement Tools / Scripts | Link to Report |
 | ---:| ---: | ---: | ---: | -----: |
-| GTZAN Genre Collection | This dataset is allocated in web MARSYAS and it will be download by http://opihi.cs.uvic.ca/sound/genres.tar.gz command, that provides the webpage | This dataset will be uploaded and explored in the development phase of the project. It will be uploaded to Google Colab and there it will be handled
- | [script1.py](link/to/python/script/file/in/Code) | [Dataset 1 Report](link/to/report1)|
+| GTZAN Genre Collection | This dataset is allocated in web MARSYAS and it will be download by http://opihi.cs.uvic.ca/sound/genres.tar.gz command, that provides the webpage | This dataset will be uploaded and explored in the development phase of the project. It will be uploaded to Google Colab and there it will be handled | [script1.py](link/to/python/script/file/in/Code) | [Dataset 1 Report](link/to/report1)|
 
 
 * Dataset1 summary. <The dataset consists of 1000 audio tracks each 30 seconds long. It contains 10 genres, each represented by 100 tracks. The tracks are all 22050 Hz Mono 16-bit audio files in .wav format.>
