@@ -13,7 +13,7 @@
 
 ## Personnel
 * Who are on this project:
-	* Microsoft:
+	* Hellfish:
 		* Project lead: Juan Lara
 		* PM: Melissa de la Pava
 		* Data scientist(s): Daniel Palleja, Alvaro Rodriguez, Juan Pablo Zuluaga, Ricardo Alejandro Orjuela.
