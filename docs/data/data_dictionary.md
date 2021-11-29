@@ -1,31 +1,60 @@
 # Data Dictionary
 
-In this document you must describe the tables, collections or files that you are using in the project. You can describe each database and provide UML diagrams for a better design description.
+For this project we will be using the [GTZAN dataset](http://marsyas.info/downloads/datasets.html) considered to be the MINST equivalent for sound data. The dataset was used in the paper  <i>Musical genre classification of audio signals </i> by G. Tzanetakis and P. Cook.
 
-# Database Name 1
+The following sections provide a detailed description of the data.
 
-Description of the database.
+## Audio data
 
-![UML Diagram](/file/uml/database1)
+The original dataset provides a collection of audio files comprising 100 files for 10 music genres listed next.
 
-## Table 1
+<ul>
+    <li>Blues</li>
+    <li>Classical</li>
+    <li>Country</li>
+    <li>Disco</li>
+    <li>Hiphop</li>
+    <li>Jazz</li>
+    <li>Metal</li>
+    <li>Pop</li>
+    <li>Reggate</li>
+    <li>Rock</li>
+</ul>
 
-Here you must describe the table
+Each audio file contains 30 seconds of a song. 
 
-| column | type | description |
-| --- | --- | --- |
-| col1 | INT | Example column |
+## Additional data
 
-# Database Name 2
+As it has been mentioned, the dataset is widely used among the research community. For that reason, extended datasets are available through popular platforms such as Kaggle.  
 
-Description of the database.
+Specifically,  [this version](!https://www.kaggle.com/andradaolteanu/gtzan-dataset-music-genre-classification) provides signal-processing data, both images (spectrograms) and numeric data.
 
-![UML Diagram](/file/uml/database1)
 
-## Table 2
+## Spectrogram images
 
-Here you must describe the table
+Following the same structure described for the audio data, each audio fragment has an equivalent image representing their corresponding mel spectrogram.
 
-| column | type | description |
-| --- | --- | --- |
-| col1 | INT | Example column |
+| ![image](https://drive.google.com/uc?export=view&id=1ynwRdiAJNwa1gT4CB_9p5yE6UnhR4tlb) |
+|:--:| 
+| Pop song spectrogram |
+
+| ![image](https://drive.google.com/uc?export=view&id=1hJoUIiRRni812DM78hd140oZQly1NTTZ) |
+|:--:| 
+| Jazz song spectrogram |
+
+
+## Numeric features
+
+Following with the available signal-processing-related data, the dataset provides a set of attributes, namely:
+    
+* Length
+* Chroma: Data related to the Constant-Q Transform, which transforms the signal data frequency domain.
+* RMS:  root-mean-square
+    * Mean
+    * Variance
+* Spectral centroid: Measure used to characterise a spetrum. This feature is commonly associated with the measure of the brightness of a sound.
+    * Mean
+    * Variance
+* Spectral bandwidth: This featured is derived from the variance spectral centroid.
+    * Mean
+    * Variance
