@@ -7,6 +7,7 @@ authors = ["Alvaro Rodriguez <aldrodriguezca@unal.edu.co>"]
 [tool.poetry.dependencies]
 python = "^3.8"
 jupytext = "^1.13.3"
+kaggle = "^1.5.12"
 
 [tool.poetry.dev-dependencies]
 

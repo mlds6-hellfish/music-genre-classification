@@ -9,7 +9,7 @@ The dataset provides images and audio for 10 music genres, comprising 100 files 
 
 ## Data quality summary
 
-As the data is publicly available through a [kaggle dataset](!https://www.kaggle.com/andradaolteanu/gtzan-dataset-music-genre-classification) the data quality is good.
+As the data is publicly available through a [kaggle dataset](!https://www.kaggle.com/andradaolteanu/gtzan-dataset-music-genre-classification) the data quality is good, i.e. there are not missing values or unbalanced classes.
 
 It is important to remark that even though we have available data for training the classifier model (in terms of spectrogram images), we are also developing a software module in order to process audio files and extract the spectrogram. This module  is going to be used in the web application.
 
