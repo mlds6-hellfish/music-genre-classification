@@ -1,11 +1,12 @@
 [tool.poetry]
-name = "packagename"
+name = "music_genre_clf"
 version = "0.1.0"
-description = "Project template for data science projects"
-authors = ["Juan Lara <julara@unal.edu.co>"]
+description = "Project for music genres classification."
+authors = ["Alvaro Rodriguez <aldrodriguezca@unal.edu.co>"]
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3.8"
+jupytext = "^1.13.3"
 
 [tool.poetry.dev-dependencies]
 
