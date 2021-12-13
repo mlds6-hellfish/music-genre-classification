@@ -21,4 +21,13 @@ Marsyas (Music Analysis, Retrieval and Synthesis for Audio Signals) is an open s
 
 ## Feature Sets
 
-The Feature sets will be constructed by the convolutional neural network. Therefore, there are not any feature set
+The Feature sets will be constructed by the convolutional neural network. Therefore, there are not any feature set.
+  However, as a theoretical exercise, an exploration of the characteristics that have a high correlation with the others is proposed using the kaggle dataset [GTZAN dataset (kaggle)](https://www.kaggle.com/andradaolteanu/gtzan-dataset-music-genre-classification)  which is based on the original MARSYAS datset. In kaggle there are a file .csv with all characteristics of preprocessing by correlation that we use for exploratory analysis of the characteristics.
+  
+| Feature set Name | Input Dataset(s)   | Feature Engineering Tools/Scripts | Link to Report |
+| ---:| ---: | ---: | ---: | 
+| Feature Dataset 1 | [feature_30sec.csv](https://www.kaggle.com/andradaolteanu/gtzan-dataset-music-genre-classification) | EDA.ipynb ||
+
+ The correlation matrix of the variables found in the feature data set is shown. It is important to mention that the characteristics have average and variance measurements and both are shown below.
+  
+  ![image](https://user-images.githubusercontent.com/95109032/145737229-62cd8f33-bd09-40d4-8b4c-9d8bf619026d.png)
