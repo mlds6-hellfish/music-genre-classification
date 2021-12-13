@@ -5,38 +5,14 @@ _Baseline model is the the model a data scientist would train and evaluate quick
 > If using the Automated Modeling and Reporting tool, most of the sections below will be generated automatically from this tool. 
 
 ## Analytic Approach
-* What is target definition
-* What are inputs (description)
-* What kind of model was built?
+
+The objective of the model is to classify music audio tracks on 10 different possible genres. To do so, the model is contructed as a <i>Convolutional Neural Network</i>, whose input are images of spectrograms of shape (1025,n), and the output are 10 nodes to represent each genre. 
 
 ## Model Description
 
-* Models and Parameters
+	
+The data is received as audio files in 22050 Hz Mono 16-bit .wav format, and through a pre-processing pipe, namely, the absolute value of short time Fourier transform, an spectrogram is generated. This is the input for the convolutional neural network.
 
-	* Description or images of data flow graph
-  		* if AzureML, link to:
-    		* Training experiment
-    		* Scoring workflow
-	* What learner(s) were used?
-	* Learner hyper-parameters
+The learner optimizes categorical cross entropy, using ADAM. Regularizers L1 and L2 will be used on every middle layer, and each respective lambda. Dropouts on each middle layer with a set weight ‘p’. 
 
-
-## Results (Model Performance)
-* ROC/Lift charts, AUC, R^2, MAPE as appropriate
-* Performance graphs for parameters sweeps if applicable
-
-## Model Understanding
-
-* Variable Importance (significance)
-
-* Insight Derived from the Model
-
-## Conclusion and Discussions for Next Steps
-
-* Conclusion on Feasibility Assessment of the Machine Learning Task
-
-* Discussion on Overfitting (If Applicable)
-
-* What other Features Can Be Generated from the Current Data
-
-* What other Relevant Data Sources Are Available to Help the Modeling
+The hyperparameters of the learner are: ADAM’s learning rate, for all regularizers, each weight lambda,  the dropout rate ‘p’.
