@@ -10,9 +10,27 @@ The objective of the model is to classify music audio tracks on 10 different pos
 
 ## Model Description
 
-	
+### Spectrogram-data	
 The data is received as audio files in 22050 Hz Mono 16-bit .wav format, and through a pre-processing pipe, namely, the absolute value of short time Fourier transform, an spectrogram is generated. This is the input for the convolutional neural network.
 
 The learner optimizes categorical cross entropy, using ADAM. Regularizers L1 and L2 will be used on every middle layer, and each respective lambda. Dropouts on each middle layer with a set weight ‘p’. 
 
 The hyperparameters of the learner are: ADAM’s learning rate, for all regularizers, each weight lambda,  the dropout rate ‘p’.
+
+
+### Signal data
+
+Partition: 70% training, 30% test
+Model: SVM
+Params to consider:
+decision_function_shape: ovo
+
+* 3 secs fragment
+	* Accuracy: 0.6433
+	* F1-Score: .6571
+* 30 secs fragment
+	* Accuracy: 0.7540
+	* F1-Score: 0.7516
+
+
+
