@@ -38,13 +38,11 @@ This project will be divided into three predefined phases with stakeholders:
 	* What data do we expect? Ours raw data will be downloaded from the website (http://marsyas.info/downloads/datasets.html) in the link (http://opihi.cs.uvic.ca/sound/genres.tar.gz)
 	* This dataset consists of 1000 audio tracks each 30 seconds long. It contains 10 genres, each represented by 100 tracks. The tracks are all 22050 Hz Mono 16-bit audio files in .wav format
 
-* Data movement from on-prem to Azure using ADF or other data movement tools (Azcopy, EventHub etc.) to move either
-  * all the data, 
-  * after some pre-aggregation on-prem,
-  * Sampled data enough for modeling 
+* Data
+  * Storage in AWS S3 (raw & processed).
 
-* What tools and data storage/analytics resources will be used in the solution e.g.,
-  * Colab Notebooks python for preprocessing, feature construction, aggregation and sampling.
+* Tools and ,
+  * Colab/Jupyter Notebooks python for preprocessing, feature construction, aggregation and sampling.
   * Libraries as Numpy, scikitLearn, Librosa, Matplotlib
   * Python as programming language
 * How will the score or operationalized web service(s) (RRS and/or BES) be consumed in the business workflow of the customer? If applicable, write down pseudo code for the APIs of the web service calls.
