@@ -1,0 +1,7 @@
+export PROJECT_HOME=""
+export RAW_DATASET_PATH=""
+export COMPLETE_DATA_PATH=""
+export AUDIO_DATA_PATH=""
+export IMG_DATA_PATH=""
+export PROCESSED_DATA_PATH=""
+export SIGNAL_FEATURES_PATH=""
