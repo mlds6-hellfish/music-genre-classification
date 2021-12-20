@@ -1,5 +1,11 @@
+data/*
 **/*__pycache__/*
 *.env
-env_vars*
 credentials*
 **/build/*
+**/*.ipynb_checkpoints
+.venv/*
+share/*
+lib/*
+lib64/*
+bin/*
