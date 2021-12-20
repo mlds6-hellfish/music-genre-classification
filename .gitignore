@@ -5,3 +5,7 @@ credentials*
 **/build/*
 **/*.ipynb_checkpoints
 .venv/*
+share/*
+lib/*
+lib64/*
+bin/*

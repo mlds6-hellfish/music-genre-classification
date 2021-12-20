@@ -66,8 +66,8 @@ The kaggle datset provides a set of features from a signal processing perspectiv
 
 | Feature set Name | Input Dataset(s)   | Feature Engineering Tools/Scripts | Link to Report |
 | ---:| ---: | ---: | ---: | 
-| Signal features 1 | feature_3sec.csv | [EDA-signal notebook](../../scripts/eda/eda-signal.ipynb) ||
-| Signal features 2 | feature_30sec.csv | [EDA-signal notebook](../../scripts/eda/eda-signal.ipynb)||
+| Signal features 1 | feature_3sec.csv | [EDA-signal notebook](../../scripts/eda/eda-signal.py) ||
+| Signal features 2 | feature_30sec.csv | [EDA-signal notebook](../../scripts/eda/eda-signal.py)||
 
 The following plots show the correlation behavior between signal-related features:
 
@@ -76,3 +76,12 @@ The following plots show the correlation behavior between signal-related feature
 
 ### Signal features 2 (30 seconds audio clips) 
 ![image](figures/corr_mtx_ft_30secs.png)
+
+#### Correlation matrix for mean-related features
+![image](figures/corr_mtx.png)
+
+#### BPM behavior
+![image](figures/bpm.png)
+
+#### 2D data visualization
+![image](figures/pca_2d_data.png)
